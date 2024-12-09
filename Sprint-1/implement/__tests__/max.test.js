@@ -10,7 +10,7 @@ You should implement this function in max.js, and add tests for it in this file.
 We have set things up already so that this file can see your function from the other file.
 */
 
-const findMax = require("./max.js");
+const findMax = require("../max.js");
 
 // Given an empty array
 // When passed to the max function

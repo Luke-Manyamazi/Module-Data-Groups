@@ -6,14 +6,14 @@ E.g. sum([10, 20, 30]), target output: 60
 E.g. sum(['hey', 10, 'hi', 60, 10]), target output: 80 (ignore any non-numerical elements)
 */
 
-const sum = require("./sum.js");
+const sum = require("../sum.js");
 
 // Acceptance Criteria:
 
 // Given an empty array
 // When passed to the sum function
 // Then it should return 0
-test.todo("given an empty array, returns 0")
+test.todo("given an empty array, returns 0");
 
 // Given an array with just one number
 // When passed to the sum function

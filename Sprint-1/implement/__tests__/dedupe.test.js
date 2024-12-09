@@ -24,7 +24,7 @@ E.g. dedupe([1, 2, 1]) target output: [1, 2]
 // Given an array with strings or numbers
 // When passed to the dedupe function
 // Then it should remove the duplicate values, preserving the first occurence of each element
-const dedupe = require("./dedupe");
+const dedupe = require("../dedupe");
 
 describe("dedupe function", () => {
   // Test case 1: Empty array
