@@ -1,12 +1,12 @@
 function sum(elements) {
-  const sum = 0;
+  const result = 0;
 
   for (let i = 0; i < elements.length; i++) {
     if (typeof elements[i] === "number") {
-      sum += elements[i];
+      result += elements[i];
     }
   }
-  return sum;
+  return result;
 }
 
 module.exports = sum;
