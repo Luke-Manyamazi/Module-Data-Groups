@@ -58,10 +58,10 @@ function sortWords(wordCount) {
 }
 
 function countWords(inputStr) {
-  const removePunctuations = removePunctuations(inputStr);
-  const words = splitToWords(removePunctuations);
+  const removedPunctuations = removePunctuations(inputStr);
+  const words = splitToWords(removedPunctuations);
   const wordCount = countWordNumber(words);
   return sortWords(wordCount);
 }
 
-
+console.log(countWords("you and me and you"));
