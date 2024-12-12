@@ -5,10 +5,10 @@ function tally(items) {
 
     const count = {};
     for (const item of items) {
-        counts[item] = (counts[item] || 0) + 1;
+        count[item] = (count[item] || 0) + 1;
     }
 
-    return counts;
+    return count;
 }
 
 module.exports = tally;
