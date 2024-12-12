@@ -22,8 +22,6 @@ function totalTill(till) {
   return `£${(total / 100).toFixed(2)}`;
 }
 
-const totalAmount = totalTill(till);
-
 module.exports = totalTill;
 
 // a) What is the target output when totalTill is called with the till object? - target output is £4.40
