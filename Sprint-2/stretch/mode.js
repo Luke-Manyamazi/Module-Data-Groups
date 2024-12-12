@@ -45,6 +45,5 @@ function calculateMode(list) {
   return findMode(freqs);
 }
 
-// module.exports = calculateMode;
+module.exports = calculateMode;
 
-console.log(calculateMode([1, 2, 2, 3, 3, 3, 3, "a", {}, 2]));
