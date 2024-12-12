@@ -1,5 +1,3 @@
-const co = require("co");
-
 /*
   Count the number of times a word appears in a given string.
 
@@ -28,9 +26,17 @@ const co = require("co");
 
 3. Order the results to find out which word is the most common in the input
 */
-function countWords(str) {
-  const words = str.split(/\s+/);
+function removePunctuations(inputStr) {
+  return inputStr
+    .replace(/[.,!?]/g, '')
+    .toLowerCase();
+}
 
+function splitToWords(removePunctuations) {
+  return removePunctuations.split(/\s+/);
+}
+
+function countWordNumber(words) {
   const wordCount = {};
 
   words.forEach(word => {
@@ -45,5 +51,17 @@ function countWords(str) {
 
 }
 
-module.exports = countWords;
+function sortWords(wordCount) {
+  return Object.fromEntries(
+    Object.entries(wordCount).sort((a, b) => b[1] - a[1])
+  );
+}
+
+function countWords(inputStr) {
+  const removePunctuations = removePunctuations(inputStr);
+  const words = splitToWords(removePunctuations);
+  const wordCount = countWordNumber(words);
+  return sortWords(wordCount);
+}
+
 
