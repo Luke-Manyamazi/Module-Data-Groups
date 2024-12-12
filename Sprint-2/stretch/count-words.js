@@ -26,16 +26,20 @@
 
 3. Order the results to find out which word is the most common in the input
 */
+
+// Function clean and normalize the input string (remove punctuations and convert to all lower case)
 function removePunctuations(inputStr) {
   return inputStr
     .replace(/[.,!?]/g, '')
     .toLowerCase();
 }
 
+// Function to split a string into words
 function splitToWords(removePunctuations) {
   return removePunctuations.split(/\s+/);
 }
 
+// Function to count occurences of words in an array
 function countWordNumber(words) {
   const wordCount = {};
 
@@ -51,12 +55,14 @@ function countWordNumber(words) {
 
 }
 
+// Function to sort word counts by frequency
 function sortWords(wordCount) {
   return Object.fromEntries(
     Object.entries(wordCount).sort((a, b) => b[1] - a[1])
   );
 }
 
+// Main function to count words in a given string
 function countWords(inputStr) {
   const removedPunctuations = removePunctuations(inputStr);
   const words = splitToWords(removedPunctuations);
