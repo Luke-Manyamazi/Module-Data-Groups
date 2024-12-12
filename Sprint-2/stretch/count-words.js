@@ -39,7 +39,7 @@ function splitToWords(removePunctuations) {
   return removePunctuations.split(/\s+/);
 }
 
-// Function to count occurences of words in an array
+// Function to count occurrences of words in an array
 function countWordNumber(words) {
   const wordCount = {};
 
