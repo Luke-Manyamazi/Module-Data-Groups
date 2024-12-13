@@ -4,6 +4,9 @@
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  background-color: antiquewhite;
+  padding: 5em;
+  border-radius: 10px;
 }
 
 #alarmSet {
@@ -12,4 +15,30 @@
 
 h1 {
   text-align: center;
+  font-size: 40px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 80px;
+  font-family: myFirstFont;
+  letter-spacing: 4px;
+}
+
+input[type=number] {
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+}
+
+.setAlarm {
+  text-align: center;
+  margin-top: 0;
+  font-size: 20px;
+}
+
+#set,
+#stop {
+  width: 50%;
+  height: 40px;
 }
