@@ -1,9 +1,19 @@
-.centre {
+body {
+  background-image: url("./AlarmPageBG.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: relative;
+}
+
+.container {
   position: fixed;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  background-color: antiquewhite;
+  padding: 5em;
+  border-radius: 10px;
 }
 
 #alarmSet {
