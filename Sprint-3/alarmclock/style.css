@@ -1,30 +1,13 @@
-@font-face {
-  font-family: myFirstFont;
-  src: url("./DS-DIGI.TTF");
-}
-
-body {
-  background-image: url("./AlarmPageBG.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: relative;
-}
-
-.container {
+.centre {
   position: fixed;
   top: 40%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  background-color: antiquewhite;
-  padding: 5em;
-  border-radius: 10px;
-  text-align: center;
 }
 
-h1 {
-  text-align: center;
-  font-size: 40px;
+#alarmSet {
+  margin: 20px;
 }
 
 h2 {
@@ -42,10 +25,4 @@ input[type=number] {
 
 .setAlarm {
   text-align: center;
-}
-
-#set,
-#stop {
-  width: 50%;
-  height: 40px;
 }
