@@ -1,5 +1,7 @@
 /** Write your CSS in here **/
-h1, button {
+body {
+    margin-top: 500px;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(230, 153, 66);
 }
