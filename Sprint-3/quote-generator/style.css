@@ -1,1 +1,5 @@
 /** Write your CSS in here **/
+h1, button {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
