@@ -53,3 +53,8 @@ h2 {
   color: antiquewhite;
   font-size: large;
 }
+
+#set:hover,
+#stop:hover {
+  background-color: rgb(8, 54, 39);
+}
