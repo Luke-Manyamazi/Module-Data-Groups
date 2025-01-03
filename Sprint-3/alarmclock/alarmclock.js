@@ -1,10 +1,34 @@
+let timeRemaining;
+let timer;
+
+document.getElementById("set").addEventListener("click", () => {
+  setAlarm();
+});
+
+document.getElementById("stop").addEventListener("click", () => {
+  clearInterval(timer);
+  document.getElementById("set").innerText = "Set Alarm";
+  document.getElementById("timeRemaining").innerText = "Time Remaining: 00:00";
+  document.getElementById("alarmSet").value = "";
+  audio.pause();
+  audio.currentTime = 0;
+});
+
 function setAlarm() {
-  let alarmTime = document.getElementById("alarmSet").value;
-  let timeRemaining = alarmTime;
-  let timer = setInterval(() => {
+  timeRemaining = parseInt(document.getElementById("alarmSet").value, 10);
+  if (isNaN(timeRemaining) || timeRemaining <= 0) {
+    alert("Please enter a valid positive number");
+    return;
+  }
+  clearInterval(timer); // Clear any existing timer before starting a new one
+  startTimer(); // Start the countdown
+}
+
+function startTimer() {
+  timer = setInterval(() => {
     if (timeRemaining === 0) {
-      clearInterval(timer);
-      playAlarm();
+      clearInterval(timer); // Stop the timer when it reaches 0
+      playAlarm(); // Play the alarm when time reaches 0
     } else {
       timeRemaining--;
     }
