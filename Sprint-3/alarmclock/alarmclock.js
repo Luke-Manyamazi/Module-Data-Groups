@@ -20,15 +20,15 @@ function setAlarm() {
     alert("Please enter a valid positive number");
     return;
   }
-  clearInterval(timer); // Clear any existing timer before starting a new one
-  startTimer(); // Start the countdown
+  clearInterval(timer); 
+  startTimer(); 
 }
 
 function startTimer() {
   timer = setInterval(() => {
     if (timeRemaining === 0) {
-      clearInterval(timer); // Stop the timer when it reaches 0
-      playAlarm(); // Play the alarm when time reaches 0
+      clearInterval(timer); 
+      playAlarm(); 
     } else {
       timeRemaining--;
     }
