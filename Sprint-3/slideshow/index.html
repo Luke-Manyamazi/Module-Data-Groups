@@ -4,15 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Image Carousel</title>
-    <script defer src="slideshow.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./slideshow.js"></script>
   </head>
   <body>
-    <img
-      id="carousel-img"
-      src="./assets/codingDeskSetup5.jpg"
-      alt="coding desk setup"
-    />
-    <button type="button" id="backward-btn">Backwards</button>
-    <button type="button" id="forward-btn">Forward</button>
+    <div class="slideshow-container">
+      <img id="carousel-img" src="" alt="coding desk setup" />
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
+      <a class="autoForward">&#10095;&#10095; Auto Forward</a>
+      <a class="autoBackward">Auto Backward &#10094;&#10094;</a>
+    </div>
+    <div class="dots">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+    <button id="stop">Stop</button>
   </body>
 </html>
